@@ -112,6 +112,7 @@
     确保 `sounds/` 目录下包含 `ocean.mp3`, `rain.mp3`, `fire.mp3`, `piano.mp3`, `silence.mp3`。
 
 5.  **启动系统**
+   （无需切换目录，在项目目录下运行即可）
 
     ```bash
     streamlit run ./Prototypes/prototype_v5.py
