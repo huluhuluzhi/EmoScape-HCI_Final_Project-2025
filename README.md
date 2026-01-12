@@ -114,7 +114,7 @@
 5.  **启动系统**
 
     ```bash
-    streamlit run prototype_v5.py
+    streamlit run ./Prototypes/prototype_v5.py
     ```
 
 -----
