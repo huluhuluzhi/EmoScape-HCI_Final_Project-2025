@@ -14,7 +14,7 @@ from huggingface_hub import InferenceClient
 # 页面基础配置
 st.set_page_config(page_title="EmoScape AI", page_icon="🎨", layout="wide")
 
-# 若想使用，请替换成自己HuggingFace的真实 Token
+# 注意：生产环境中建议将 Token 放入 st.secrets，不要直接写在代码里
 HF_API_TOKEN = "" 
 client = InferenceClient(token=HF_API_TOKEN)
 
@@ -220,7 +220,7 @@ if st.button("✨ 生成我的心情风景", type="primary"):
                 "prompt": "a girl holding umbrella in rain, reflection on wet street, lofi aesthetic, soft lighting, anime style",
                 "sound_file": "sounds/rain.mp3",
                 "sound_name": "🌧️ 窗外雨声",
-                "advice": "允许自己难过一会儿。这场雨是天空在陪你哭泣。"
+                "advice": "允许自己难过一会儿。这场雨是天空在陪你哭泣，我相信你会和自我和解的，加油！"
             },
             "愤怒": {
                 "prompt": "burning fireplace in a cozy wooden cabin, snow outside window, warm atmosphere, hyperrealistic",
